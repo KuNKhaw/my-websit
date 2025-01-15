@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="login-box" class="auth-box">
+            <h1>Login</h1>
+            
+            <form action="Home.html" method="GET">
+                <div class="textbox">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button class="btn" type="submit">Login</button>
+            </form>
+            <p class="switch">คุณยังไม่มีบัญชี?</p>
+            <p class="switch"><a href="#" onclick="switchToRegister()">Register here</a></p>
+        </div>
+        <div id="register-box" class="auth-box" style="display: none;">
+            <h1>Register</h1>
+            <form>
+                <div class="textbox">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="textbox">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+                <button class="btn" type="submit">Register</button>
+            </form>
+            <p class="switch">มีบัญชีอยู่แล้ว?</p>
+            <p class="switch"><a href="#" onclick="switchToLogin()">Login here</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

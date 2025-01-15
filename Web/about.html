@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าของฉัน</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://images.unsplash.com/photo-1533299346856-b1a85808f2ec?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+            background-color: #f4f4f4;
+            color: #f8f4f4;
+        }
+        header {
+            background-color:rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0 15px;
+            transition: transform 0.4s, background-color 0.4s; /* เพิ่มเอฟเฟกต์การเคลื่อนไหว */
+        }
+        nav a:hover {
+            background-color: #bdb7b6;
+            color: black;
+            transform: translateY(-10px); /* เพิ่มเอฟเฟกต์การพุ่งขึ้น */
+            border-radius: 5px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            opacity: 0; /* เริ่มต้นด้วยความโปร่งใส */
+            transform: translateY(50px); /* เริ่มต้นด้วยการเลื่อนลง */
+            animation: slide-in 1s forwards; /* ใช้แอนิเมชัน */
+        }
+        @keyframes slide-in {
+            to {
+                opacity: 1; /* เปลี่ยนเป็นความโปร่งใสเต็มที่ */
+                transform: translateY(0); /* เลื่อนขึ้นไปยังตำแหน่งเดิม */
+            }
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        หน้าของฉัน
+    </header>
+    <nav>
+        <a href="Home.html">หน้าแรก</a>
+        <a href="about.html">เกี่ยวกับเรา</a>
+        <a href="Products.html">สินค้า</a>
+        <a href="Contact.html">ติดต่อเรา</a>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <h1>ยินดีต้อนรับสู่หน้าของฉัน</h1>
+            <p>นี่คือตัวอย่างของการจัดหน้าเว็บ คุณสามารถเพิ่มเนื้อหาเพิ่มเติมที่นี่เพื่อทำให้หน้าเว็บของคุณดูมีข้อมูลและน่าสนใจมากขึ้น</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque justo nec urna fringilla, non vestibulum eros pharetra. Suspendisse potenti. Curabitur vulputate, eros at vehicula pharetra, nulla ligula consequat lacus, at gravida est orci non nisi.</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+        <div class="content">
+            <h2>ส่วนเพิ่มเติม</h2>
+            <p>คุณสามารถเพิ่มหลายส่วนในหน้าเว็บของคุณเพื่อจัดเนื้อหาได้อย่างมีประสิทธิภาพ</p>
+            <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero.</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 หน้าของฉัน สงวนลิขสิทธิ์.
+    </footer>
+</body>
+</html>

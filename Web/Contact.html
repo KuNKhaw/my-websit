@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อเรา - เว็บไซต์ของฉัน</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://images.unsplash.com/photo-1533299346856-b1a85808f2ec?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            opacity: 0;
+            animation: fade-in 1s forwards;
+        }
+        @keyframes fade-in {
+            to {
+                opacity: 1;
+            }
+        }
+        nav {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0 15px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #bdb7b6;
+            border-radius: 5px;
+        }
+        .contact-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 350px;
+            transform: translateY(50px);
+            opacity: 0;
+            animation: slide-up 1s forwards 0.5s;
+            margin-top: 80px; /* for spacing from fixed nav */
+        }
+        @keyframes slide-up {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #007BFF;
+            font-size: 2.5em;
+        }
+        .contact-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            font-size: 1.2em;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+        .contact-info:hover {
+            transform: scale(1.05);
+            opacity: 0.8;
+        }
+        .contact-info img {
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="Home.html">หน้าแรก</a>
+        <a href="about.html">เกี่ยวกับเรา</a>
+        <a href="Products.html">สินค้า</a>
+        <a href="Contact.html">ติดต่อเรา</a>
+    </nav>
+    <div class="contact-container">
+        <h1>ติดต่อเรา</h1>
+        <div class="contact-info">
+            <img src="https://img.icons8.com/ios-filled/50/007BFF/facebook-new.png" alt="ไอคอน Facebook">
+            <a href="https://www.facebook.com/YourFacebookPage" target="_blank">YourFacebookPage</a>
+        </div>
+        <div class="contact-info">
+            <img src="https://img.icons8.com/ios-filled/50/007BFF/instagram-new.png" alt="ไอคอน Instagram">
+            <a href="https://www.instagram.com/YourInstagramHandle" target="_blank">@YourInstagramHandle</a>
+        </div>
+        <div class="contact-info">
+            <img src="https://img.icons8.com/ios-filled/50/007BFF/phone.png" alt="ไอคอนโทรศัพท์">
+            <a href="tel:+1234567890">+1234567890</a>
+        </div>
+        <div class="contact-info">
+            <img src="https://img.icons8.com/ios-filled/50/007BFF/line-me.png" alt="ไอคอน LINE">
+            <a href="https://line.me/ti/p/YourLineID" target="_blank">YourLineID</a>
+        </div>
+    </div>
+</body>
+</html>
